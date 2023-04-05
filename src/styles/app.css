@@ -1,0 +1,8 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: var(--greyLight-1);
+  flex-direction: column;
+}
