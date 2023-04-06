@@ -21,6 +21,12 @@
   border-radius: 23px;
 }
 
+.field__detail span {
+  display: flex;
+  padding: 2.5%;
+  color: var(--primary);
+}
+
 .field__detail p {
   display: flex;
   padding: 2.5%;

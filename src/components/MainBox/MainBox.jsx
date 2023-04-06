@@ -59,12 +59,12 @@ export default function MainBox({ children }) {
       <div className="field__detail">
         <p className="field__name">{responseWeatcher.name.toUpperCase()}</p>
         {dataWeatcher.map((weatcher) => (
-          <p className="field__weatcher" key={uuidv4()}>
+          <span className="field__weatcher" key={uuidv4()}>
             {weatcher.icon}{' '}
             <p>
               {weatcher.title}: {weatcher.data}
             </p>
-          </p>
+          </span>
         ))}
       </div>
     </div>

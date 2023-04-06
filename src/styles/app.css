@@ -23,3 +23,13 @@
   background: var(--greyLight-1);
   flex-direction: column;
 }
+
+.go-hub {
+  font-size: 15px;
+  width: 8%;
+  color: var(--primary);
+  padding-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
