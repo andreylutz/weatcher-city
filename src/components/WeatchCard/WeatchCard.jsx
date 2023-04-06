@@ -6,24 +6,40 @@ export default function WeatchCard() {
 
   const dataWeatcher = responseWeatcher.data;
 
+  let statusWeatcher;
+
+  if (dataWeatcher.weather[0].main === 'Clouds') {
+    statusWeatcher = 'cloudy';
+  }
+
+  if (dataWeatcher.weather[0].main === 'Clear') {
+    statusWeatcher = 'sunny';
+  }
+
+  if (dataWeatcher.weather[0].main === 'Rain') {
+    statusWeatcher = 'rainy';
+  }
+
+  if (dataWeatcher.weather[0].main === 'Mist') {
+    statusWeatcher = 'mist';
+  }
+
+  if (dataWeatcher.weather[0].main === 'Snow') {
+    statusWeatcher = 'snowy';
+  }
+
+  console.log(dataWeatcher);
   return (
     <>
       <div className="card">
         <div className="container">
-          <div className="cloud front">
-            <span className="left-front"></span>
-            <span className="right-front"></span>
-          </div>
-          <span className="sun sunshine"></span>
-          <span className="sun"></span>
-          <div className="cloud back">
-            <span className="left-back"></span>
-            <span className="right-back"></span>
-          </div>
+          <div className={statusWeatcher}></div>
         </div>
         <div className="card-header">
           <span>{dataWeatcher.name}</span>
-          <span>Today</span>
+          <span>{dataWeatcher.weather[0].description}</span>
+          <span>humidity {dataWeatcher.main.humidity} %</span>
+          <span>wind {dataWeatcher.wind.speed} m/s</span>
         </div>
         <span className="temp">{Math.floor(dataWeatcher.main.temp)}°</span>
       </div>
