@@ -42,7 +42,7 @@
 .card-header span:first-child {
   word-break: break-all;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 135%;
   color: rgba(87, 77, 51, 0.66);
 }
@@ -168,7 +168,7 @@
 }
 
 .mist:after {
-  background: #ffef448e;
+  background: #e2d97247;
   border-radius: 50%;
   box-shadow: rgba(255, 255, 0, 0.153) 0 0 0 15px;
   content: '';

@@ -1,8 +1,11 @@
 import './style.css';
 import { useSelector } from 'react-redux';
+import { dateConverter } from '../../helpers';
 
 export default function WeatchCard() {
   const dataWeatcher = useSelector((state) => state.weatcher.data);
+
+  const toDay = dateConverter(dataWeatcher.dt);
 
   let statusWeatcher;
 
@@ -34,7 +37,7 @@ export default function WeatchCard() {
           <div className={statusWeatcher}></div>
         </div>
         <div className="card-header">
-          <span>{dataWeatcher.name}</span>
+          <span>{toDay}</span>
           <span>{dataWeatcher.weather[0].description}</span>
           <span>humidity {dataWeatcher.main.humidity} %</span>
           <span>wind {dataWeatcher.wind.speed} m/s</span>
