@@ -2,9 +2,7 @@ import './style.css';
 import { useSelector } from 'react-redux';
 
 export default function WeatchCard() {
-  const responseWeatcher = useSelector((state) => state.weatcher);
-
-  const dataWeatcher = responseWeatcher.data;
+  const dataWeatcher = useSelector((state) => state.weatcher.data);
 
   let statusWeatcher;
 

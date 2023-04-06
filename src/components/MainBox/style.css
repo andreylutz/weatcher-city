@@ -1,14 +1,28 @@
-.head-box {
+.field {
   width: 75rem;
   height: 40rem;
   border-radius: 3rem;
   box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
-  padding: 4rem;
+  padding: 3rem;
   display: grid;
-  grid-template-columns: 17.6rem 19rem 20.4rem;
+  grid-template-columns: 30rem 19rem 20.4rem;
   grid-template-rows: repeat(autofit, -webkit-min-content);
   grid-template-rows: repeat(autofit, min-content);
   grid-column-gap: 5rem;
   grid-row-gap: 2.5rem;
   align-items: start;
+}
+
+.field__detail {
+  width: 32rem;
+  height: 35rem;
+  padding: 1rem;
+
+  border-radius: 23px;
+}
+
+.field__detail p {
+  font-size: 1.7rem;
+  padding: 4%;
+  color: var(--primary);
 }

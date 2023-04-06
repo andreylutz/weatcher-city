@@ -8,14 +8,14 @@ import WeatchCard from './components/WeatchCard/WeatchCard';
 import MainBox from './components/MainBox/MainBox';
 
 function App() {
-  const responseWeatcher = useSelector((state) => state.weatcher);
+  const responseWeatcher = useSelector((state) => state.weatcher.data);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getWeatcher());
   }, [dispatch]);
 
-  if (responseWeatcher.data === undefined) {
+  if (responseWeatcher === undefined) {
     return;
   }
 
