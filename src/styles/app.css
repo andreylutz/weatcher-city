@@ -26,10 +26,11 @@
 
 .go-hub {
   font-size: 15px;
-  width: 8%;
+  width: 9%;
   color: var(--primary);
-  padding-top: 4%;
+  padding-top: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }

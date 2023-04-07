@@ -72,6 +72,17 @@
   width: 90%;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 5%;
+  align-items: flex-end;
+  margin-top: 3%;
   margin-bottom: 3%;
+}
+
+.errors {
+  height: 20px;
+  margin: 5%;
+}
+
+.errors__text {
+  color: red;
+  font-size: 13px;
 }

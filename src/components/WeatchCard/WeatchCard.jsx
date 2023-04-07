@@ -29,7 +29,6 @@ export default function WeatchCard() {
     statusWeatcher = 'snowy';
   }
 
-  console.log(dataWeatcher);
   return (
     <>
       <div className="card">

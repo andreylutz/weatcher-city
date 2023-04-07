@@ -1,5 +1,6 @@
 import { api } from '../../api/index';
 import { actionsWeatcher } from '../actions-creators/weatcher.action';
+import { actionsErrors } from '../actions-creators/error.action';
 
 export const getWeatcher = (eventCity = 'Moscow') => {
   return async (dispatch) => {
@@ -10,7 +11,8 @@ export const getWeatcher = (eventCity = 'Moscow') => {
 
       dispatch(actionsWeatcher.setWeatcher(res));
     } catch (e) {
-      console.log(e.response.data);
+      dispatch(actionsErrors.setError(e.response.data));
+      // console.log(e.response.data);
     }
   };
 };
