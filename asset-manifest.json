@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/weatcher-city/static/css/main.2d98bb5d.css",
+    "main.js": "/weatcher-city/static/js/main.9cd74749.js",
+    "index.html": "/weatcher-city/index.html",
+    "main.2d98bb5d.css.map": "/weatcher-city/static/css/main.2d98bb5d.css.map",
+    "main.9cd74749.js.map": "/weatcher-city/static/js/main.9cd74749.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d98bb5d.css",
+    "static/js/main.9cd74749.js"
+  ]
+}
